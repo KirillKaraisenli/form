@@ -1,22 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="./css/reset.css">
-<link rel="stylesheet" href="./css/style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
+        integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
 </head>
+
 <body>
-<button class="btn-open" data-modal-open>Відкрити модалку</button>
-<div class="backdrop is-hidden" data-modal>
-<div class="modal">
-<button class="btn" data-modal-close>Закрити</button>
-<p>....</p>
-</div>
-</div>
-
-
-<script src="./modal.js"></script>
+    <button class="btn-open" data-modal-open>Відкрити модалку</button>
+    <div class="backdrop is-hidden" data-modal>
+        <div class="modal">
+            <button class="btn" data-modal-close>
+                <svg class="close__icon">
+                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                </svg>
+            </button>
+            <h1 class="modal__title">Reach out to us!</h1>
+            <form class="modal">
+                <label class="modal__label" for="">
+                    <input placeholder="Your name*" class="modal__input" type="text">
+                </label>
+                <label class="modal__label" for="">
+                    <input placeholder="Your e-mail*" class="modal__input" type="email">
+                </label>
+                <label placeholder="Your message*" class="modal__label" for="">
+                    <textarea class="modal__input" name="message" id="" cols="30" rows="10"></textarea>
+                </label>
+                <button type="submit">Send message</button>
+            </form>
+        </div>
+    </div>
+    <script src="./modal.js"></script>
 </body>
-</html>
+</html

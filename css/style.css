@@ -28,6 +28,7 @@
   border-radius: 4px;
   background-color: #FFF;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
+overflow: hidden;
 }
 
 .btn-open {
@@ -105,4 +106,24 @@
   font-style: normal;
   font-weight: 400;
   line-height: normal;
+}
+
+.modal__input-thumb{
+  position: relative;
+}
+ 
+.modal__label-icon {
+  position: absolute;
+  top: 50%;
+  left: 12px;
+  transform: translateY(-50%);
+  height: 22px;
+  width: 22px;
+}
+
+iframe {
+  position: absolute;
+  top: -15%;
+  right: -20%;
+  border-radius: 50%;
 }

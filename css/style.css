@@ -13,38 +13,36 @@
   pointer-events: none;
 }
 
-.no-scroll {
+/* .no-scroll {
   overflow: hidden;
-}
+} */
 
 .modal {
   position: absolute;
   top: 50%;
   left: 50%;
   min-width: 1000px;
-  min-height: 650px;
-  padding: 15px;
+  min-height: 750px;
+  padding: 50px;
   transform: translate(-50%, -50%);
   border-radius: 4px;
   background-color: #FFF;
   box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
-.close__icon {
-  width: 18px;
-  height: 18px;
-}
-
 .btn-open {
   margin-left: 500px;
   width: 500px;
   height: 200px;
-background-color: rgb(51 ,51 ,51);
-color: white;
-border-radius: 50%;
+  background-color: rgb(51, 51, 51);
+  color: white;
+  border-radius: 50%;
 }
 
 .btn {
+  position: absolute;
+  top: 10px;
+  left: 10px;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -55,13 +53,18 @@ border-radius: 50%;
   background-color: #fff;
 }
 
-.btn:hover,
-.btn:focus {
-  border: 1px solid rgba(0, 119, 255, 0.233);
-  fill: rgba(0, 119, 255, 0.233);
+.close__icon {
+  width: 18px;
+  height: 18px;
 }
 
-.modal {
+.btn:hover,
+.btn:focus {
+  border: 1px solid rgb(0, 119, 255);
+  fill: rgb(0, 119, 255);
+}
+
+.form {
   display: flex;
   flex-direction: column;
   gap: 8px;
@@ -70,31 +73,36 @@ border-radius: 50%;
 .modal__title {
   margin-bottom: 30px;
   color: #3E3E3E;
-font-family: "Apercu Arabic Pro";
-font-size: 40px;
-font-weight: 400;
-line-height: 130%;
+  font-family: "Apercu Arabic Pro";
+  font-size: 40px;
+  font-weight: 400;
+  line-height: 130%;
 }
+
 .modal__label {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
 }
+
 .modal__input {
   border-radius: 10px;
-border: 1px solid #DCDCDC;
-background: #FFF;
-width: 537px;
-padding: 30px 46px;
+  border: 1px solid #DCDCDC;
+  background: #FFF;
+  width: 537px;
+  padding: 20px 46px;
 }
 
 .modal-button {
   width: 218px;
-height: 73px;
-flex-shrink: 0;
+  height: 73px;
+  flex-shrink: 0;
   border-radius: 500px;
-background: #FAD34F;
-color: #FFF;
-font-family: "Apercu Arabic Pro";
-font-size: 18px;
-font-style: normal;
-font-weight: 400;
-line-height: normal;
+  background: #FAD34F;
+  color: #FFF;
+  font-family: "Apercu Arabic Pro";
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
 }

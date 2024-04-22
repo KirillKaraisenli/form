@@ -13,7 +13,22 @@
 </head>
 
 <body>
-    <button class="btn-open" data-modal-open>Відкрити модалку</button>
+    <header class="header"></header>
+    <main>
+        <section class="hero">
+            <div class="hero__left-thumb hero__thumb">
+                <img class="hero__left-image"
+                    src="https://cdn.pixabay.com/photo/2023/02/17/08/17/piano-7795476_1280.jpg" alt="">
+            </div>
+            <div class="hero__right-thumb hero__thumb" >
+                <img class="hero__right-image"
+                    src="https://cdn.pixabay.com/photo/2024/04/11/04/50/ai-generated-8689197_1280.jpg" alt="">
+            </div>
+            <button class="btn-open" data-modal-open>Відкрити модалку</button>
+        </section>
+
+    </main>
+    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button class="btn" data-modal-close>
@@ -25,24 +40,29 @@
                 <h1 class="modal__title">Reach out to us!</h1>
                 <label class="modal__label" for=""> Name
                     <div class="modal__input-thumb">
-                    <input placeholder="Your name*" class="modal__input" type="text">
-                    <svg class="modal__label-icon">
-                        <use href="./img/symbol-defs.svg#icon-person"></use>
-                    </svg>
-                </div>
+                        <input placeholder="Your name*" class="modal__input" type="text">
+                        <svg class="modal__label-icon">
+                            <use href="./img/symbol-defs.svg#icon-person"></use>
+                        </svg>
+                    </div>
                 </label>
                 <label class="modal__label" for=""> Emeil
                     <input placeholder="Your e-mail*" class="modal__input" type="email">
                 </label>
                 <label class="modal__label" for=""> Message
-                    <textarea class="modal__input" placeholder="Your message*" name="message" id="" cols="30" rows="10"></textarea>
+                    <textarea class="modal__input" placeholder="Your message*" name="message" id="" cols="30"
+                        rows="10"></textarea>
                 </label>
                 <button class="modal-button" type="submit">Send message</button>
-                
+
             </form>
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5090.615774613327!2d-73.87141276207932!3d40.65417742034638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25d0d941543b9%3A0x3c6058f7c99f77f7!2sGateway%20Center!5e0!3m2!1suk!2sua!4v1713371372988!5m2!1suk!2sua" width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5090.615774613327!2d-73.87141276207932!3d40.65417742034638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25d0d941543b9%3A0x3c6058f7c99f77f7!2sGateway%20Center!5e0!3m2!1suk!2sua!4v1713371372988!5m2!1suk!2sua"
+                width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
     <script src="./modal.js"></script>
 </body>
+
 </html

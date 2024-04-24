@@ -1,4 +1,32 @@
-.header {}
+.header {
+  /* height: 80px; */
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: #fff;
+  color: black;
+  padding: 30px 50px;
+z-index: 10;
+}
+.header__list {
+  display: flex;
+  gap: 50px;
+
+}
+.header__item {
+}
+.header__link {
+}
+
+.current::after {
+content:"";
+display: block;
+height: 4px;
+width: 100%;
+background-color: red;
+border-radius: 100px;
+margin-top: 15px;
+}
 
 .hero {
   position: relative;
@@ -10,6 +38,7 @@
   background-size: contain;
 }
 .card {
+
 }
 
 .hero__thumb {

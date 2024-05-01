@@ -15,67 +15,87 @@
 <body>
     <header class="header">
         <ul class="header__list">
-            <li class="header__item"><a href="" class="header__link current">home</a></li>
-            <li class="header__item"><a href="" class="header__link ">home</a></li>
-            <li class="header__item"><a href="" class="header__link ">home</a></li>
-            <li class="header__item"><a href="" class="header__link ">home</a></li>
+            <li class="header__item"><a href="" class="header__link current">Home</a></li>
+            <li class="header__item"><a href="#about" class="header__link">about</a></li>
+            <li class="header__item"><a href="#projects" class="header__link">projects</a></li>
+            <li class="header__item"><a href="#contacts" class="header__link">contacts</a></li>
         </ul>
     </header>
     <main>
         <section class="hero">
-                <div class="hero__left-thumb hero__thumb">
-                    <img class="hero__left-image"
-                        src="https://cdn.pixabay.com/photo/2023/02/17/08/17/piano-7795476_1280.jpg" alt="">
+                <div class="hero__thumb hero__thumb-right" >
+                    <img class="hero__right-img" src="https://cdn.pixabay.com/photo/2024/04/11/04/50/ai-generated-8689197_1280.jpg" alt="">
                     <div class="overlay">
                         <p class="overlay__text">Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-            <div class="hero__right-thumb hero__thumb">
-                <img class="hero__right-image"
-                    src="https://cdn.pixabay.com/photo/2024/04/11/04/50/ai-generated-8689197_1280.jpg" alt="">
+
+
+                <div class="hero__thumb hero__thumb-left">
+                    <img class="hero__left-img" src="https://cdn.pixabay.com/photo/2023/02/17/08/17/piano-7795476_1280.jpg" alt="">
                     <div class="overlay">
                         <p class="overlay__text">Lorem, ipsum dolor.</p>
                     </div>
                 </div>
-            <button class="btn-open" data-modal-open>Відкрити модалку</button>
+
+            <button class="btn-open" data-modal-open type="button">Відкрити модалку</button>
+        </section>
+
+        <section class="sectio" id="about">
+            <h2>Lorem, ipsum dolor.</h2>
+            <div class="slide__menu">
+                <ul class="slide__menu__list">
+                    <li class="slide__menu__item">home</li>
+                    <li class="slide__menu__item">contacts</li>
+                    <li class="slide__menu__item">projects</li>
+                </ul>
+                <p class="slide__menu__title">open menu</p>
+            </div>
+        </section>
+
+        <section class="sectio" id="projects">
+            <h2>Lorem, ipsum dolor.</h2>
+        </section>
+
+        <section class="sectio" id="contacts">
+            <h2>Lorem, ipsum dolor.</h2>
         </section>
 
     </main>
-    <!-- modal -->
     <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button class="btn" data-modal-close>
+            <button class="close-btn" data-modal-close>
                 <svg class="close__icon">
-                    <use href="./img/symbol-defs.svg#icon-close"></use>
+                    <use href="./img/icons/symbol-defs.svg#icon-close"></use>
                 </svg>
             </button>
+            <h1 class="modal__title">Reach out to us!</h1>
             <form class="form">
-                <h1 class="modal__title">Reach out to us!</h1>
-                <label class="modal__label" for=""> Name
-                    <div class="modal__input-thumb">
-                        <input placeholder="Your name*" class="modal__input" type="text">
-                        <svg class="modal__label-icon">
-                            <use href="./img/symbol-defs.svg#icon-person"></use>
+                <label class="form__label" for="name">name
+                    <div class="modal__imput__tumb">
+                        <input placeholder="Your name*" class="form__input" id="name" type="text">
+                        <svg class="modal__label__icon">
+                            <use href="./img/icons/symbol-defs.svg#icon-person"></use>
                         </svg>
                     </div>
                 </label>
-                <label class="modal__label" for=""> Emeil
-                    <input placeholder="Your e-mail*" class="modal__input" type="email">
+                <label class="form__label" for="e-mail">email
+                    <input placeholder="Your e-mail*" class="form__input" id="e-mail" type="email">
                 </label>
-                <label class="modal__label" for=""> Message
-                    <textarea class="modal__input" placeholder="Your message*" name="message" id="" cols="30"
-                        rows="10"></textarea>
+                <label class="form__label" for="message">comment
+                    <textarea placeholder="Your message*" class="form__input-comment" name="message" id="message"
+                        cols="30" rows="10"></textarea>
                 </label>
-                <button class="modal-button" type="submit">Send message</button>
-
+                <button class="form__button__input" type="submit">Send message</button>
             </form>
             <iframe
-                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5090.615774613327!2d-73.87141276207932!3d40.65417742034638!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25d0d941543b9%3A0x3c6058f7c99f77f7!2sGateway%20Center!5e0!3m2!1suk!2sua!4v1713371372988!5m2!1suk!2sua"
-                width="600" height="600" style="border:0;" allowfullscreen="" loading="lazy"
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d749.2581911620994!2d-1.1249743645031727!3d53.95443640032147!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x48793125db5f2543%3A0xca2abefd3037e577!2zR2F0ZXdheSBDZW50cmUsIEFjb21iLCBZb3JrLCDQktC10LvQuNC60LAg0JHRgNC40YLQsNC90ZbRjw!5e0!3m2!1suk!2sua!4v1713371411497!5m2!1suk!2sua"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
                 referrerpolicy="no-referrer-when-downgrade"></iframe>
         </div>
     </div>
+
     <script src="./modal.js"></script>
 </body>
 
-</html
+</html>

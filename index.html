@@ -8,14 +8,20 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/2.0.0/modern-normalize.min.css"
         integrity="sha512-4xo8blKMVCiXpTaLzQSLSw3KFOVPWhm/TRtuPVc4WG6kUgjH6J03IBuG7JZPkcWMxJ5huwaBpOpnwYElP/m6wg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+        rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+      />
+      <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="./css/reset.css">
     <link rel="stylesheet" href="./css/style.css">
+    
 </head>
 
 <body>
-    <header class="header">
+    <header class="header animate__animated animate__bounceInDown">
         <ul class="header__list">
-            <li class="header__item"><a href="" class="header__link current">Home</a></li>
+            <li class="header__item"><a href="" class="header__link">Home</a></li>
             <li class="header__item"><a href="#about" class="header__link">about</a></li>
             <li class="header__item"><a href="#projects" class="header__link">projects</a></li>
             <li class="header__item"><a href="#contacts" class="header__link">contacts</a></li>
@@ -23,7 +29,7 @@
     </header>
     <main>
         <section class="hero">
-                <div class="hero__thumb hero__thumb-right" >
+                <div class="hero__thumb hero__thumb-right "data-aos="fade-left" >
                     <img class="hero__right-img" src="https://cdn.pixabay.com/photo/2024/04/11/04/50/ai-generated-8689197_1280.jpg" alt="">
                     <div class="overlay">
                         <p class="overlay__text">Lorem, ipsum dolor.</p>
@@ -96,6 +102,12 @@
     </div>
 
     <script src="./modal.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet"></script>
+    <script>
+        AOS.init({
+            
+        });
+      </script>
 </body>
 
 </html>

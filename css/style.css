@@ -6,6 +6,16 @@
   scroll-behavior: smooth;
 }
 
+@keyframes bg-color {
+0% { background-color: rgb(16, 79, 103);
+     color: #8ccbff;}
+50% { background-color: rgb(65, 16, 103);
+     color: #ee8cff;}
+75% { background-color: rgb(103, 16, 20);
+     color: #ff8c8c;}
+100% { background-color: rgb(103, 87, 16);
+     color: #fff78c;}
+}
 
 .header{
   position: fixed;
@@ -17,7 +27,9 @@
   color: black;
   background-color:#FFF;
 }
-
+.header:hover {
+ animation: bg-color 5s linear infinite;
+}
 .header__link::after {
   content: "";
   display: block;
@@ -30,6 +42,7 @@
   transform-origin: center right;
   transition: transform var(--animation), transform-origin var(--animation);
 }
+
 .header__link:hover::after {
 transform: scale(1);
 transform-origin: center left;
@@ -68,12 +81,24 @@ transform-origin: center left;
 .hero__right-img{
 }
 
+@keyframes border-color {
+  0% {  border: 3px solid rgb(255, 0, 0);}
+  25% {  border: 3px solid rgb(255, 77, 0);}
+  50% {  border: 3px solid rgb(255, 140, 0);}
+  75% {  border: 3px solid rgb(255, 196, 0);}
+  100% {  border: 3px solid rgb(255, 0, 0);}
+}
 
 .hero__thumb {
-  border: 3px solid sandybrown;
   position: absolute;
   border-radius: 10px;
   overflow: hidden;
+}
+.hero__thumb:hover {
+animation-name: border-color;
+animation-duration: 2s;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
 }
 
 
@@ -201,7 +226,7 @@ transform-origin: center left;
   position: absolute;
   top: 50%;
   left: 50%;
-  min-width: 1000px;
+  min-width: 300px;
   min-height: 650px;
   padding: 15px;
   background-color: #fff;
@@ -212,14 +237,35 @@ overflow: hidden;
 box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.12), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 2px 1px 0px rgba(0, 0, 0, 0.20);
 }
 
-
+@keyframes btn-move{
+  0% {
+    transform: translate(0);
+  }
+  25% {
+    transform: translate(0, 100%);
+  }
+  50% {
+    transform: translate(100%, 100%);
+  }
+  75% {
+      transform: translate(100% ,0);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 .btn-open{
   width: 500px;
   height: 200px;
 background-color: rgb(51, 51, 51);
 color: white;
 border-radius: 50px;
+animation-name: btn-move;
+animation-duration: 3000ms;
+animation-timing-function: linear;
+animation-iteration-count: infinite;
 }
+
 
 
 .close-btn{
